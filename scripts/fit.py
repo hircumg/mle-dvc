@@ -46,6 +46,7 @@ def fit_model():
             ("model", model),
         ],
     )
+
     pipeline.fit(data, data[params["target_col"]])
 
     # сохраните обученную модель в models/fitted_model.pkl
